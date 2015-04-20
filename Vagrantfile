@@ -10,6 +10,12 @@ Vagrant.configure(2) do |config|
   # For a complete reference, please see the online documentation at
   # https://docs.vagrantup.com.
 
+  # if Vagrant.has_plugin?("vagrant-proxyconf")
+  #   config.proxy.http     = "http://proxy:port"
+  #   config.proxy.https    = "http://proxy:port"
+  #   config.proxy.no_proxy = ""
+  # end
+
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
   config.vm.box = "ubuntu/trusty64"
